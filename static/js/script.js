@@ -17,3 +17,9 @@ function changePosition(column, row) {
 
 	positionSelected.append("♜");
 }
+
+function positionError(weHaveAProblem) {
+	if(weHaveAProblem == false) {
+		$("td:contains(♜)").css({'animation': 'shake 0.5s 5'});
+	}
+}

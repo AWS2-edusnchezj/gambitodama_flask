@@ -43,9 +43,9 @@ def change_position():
 	for position in positions:
 		if position['position'] == positionSelected:
 			if nextPosition in position['allowedPositions']:
-				return render_template('index.html', actualColumn=nextPosition[0], actualRow=nextPosition[1])
+				return render_template('index.html', can='true', actualColumn=nextPosition[0], actualRow=nextPosition[1])
 	
 
-	return render_template('index.html', alert='El moviment que vols realitzar no és possible.', actualColumn=positionSelected[0], actualRow=positionSelected[1])
+	return render_template('index.html', can='false', actualColumn=positionSelected[0], actualRow=positionSelected[1])
 
 app.run(debug=True)

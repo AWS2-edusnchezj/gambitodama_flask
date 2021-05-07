@@ -126,6 +126,7 @@
 		</div>
 		<script>
 			changePosition({% if actualColumn %}{{ actualColumn }}{% else %}1{% endif %}, {% if actualRow %}{{ actualRow }}{% else %}1{% endif %});
+			positionError({{ can }});
 		</script>
 	</body>
 </html>
