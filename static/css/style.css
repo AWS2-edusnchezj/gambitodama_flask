@@ -1,0 +1,40 @@
+body {
+	background-image: url(/static/images/wood-bg.jpg);
+	background-size: cover;
+}
+
+.main {
+	margin: auto;
+	width: 50%;
+	padding: 10px;
+}
+
+#table-gambito {
+	width: auto;
+	height: auto;
+}
+
+td {
+	width: 90px;
+	height: 90px;
+	border: 1px solid black;
+}
+
+tr, td {
+	background: #facd8a;
+	font-size: 50px;
+	text-align: center;
+	text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.6);
+	overflow:hidden;
+}
+
+tr:nth-child(odd) td:nth-child(even),
+tr:nth-child(even) td:nth-child(odd){
+  background: #aa592a;
+}
+
+.selected {
+	background: rgba(40, 196, 183, 0.8);
+	width: 100%;
+	height: 100%;
+}
